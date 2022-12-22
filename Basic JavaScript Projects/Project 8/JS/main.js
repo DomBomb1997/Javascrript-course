@@ -1,3 +1,4 @@
+// Concatenate method //
 function full_Sentence() {
     var part_1 = "I have ";
     var part_2 = "made this ";
@@ -6,7 +7,7 @@ function full_Sentence() {
     var whole_sentence = part_1.concat(part_2, part_3, part_4);
     document.getElementById("Concatenate").innerHTML =whole_sentence
 }
-
+// slice method //
 function slice_Method() {
     var sentence = "All work and no play makes johnny a dull boy.";
     var Section = sentence.slice(27,33);
@@ -23,13 +24,19 @@ let position = text.search("Blue");
 
 document.getElementById("search").innerHTML = position;
 }
-
+// string method //
 function string_Method() {
     var X =182;
     document.getElementById("Numbers_to_string").innerHTML = X.toString();
 }
-
+// precision method //
 function precision_Method() {
     var X = 2374.82758378524;
     document.getElementById("Precision").innerHTML = X.toPrecision(10);
 }
+// to fixed //
+console.log(financial(123.456));
+// vakue of //
+const object1 = new MyNumberType(4);
+
+console.log(object1 + 3);
