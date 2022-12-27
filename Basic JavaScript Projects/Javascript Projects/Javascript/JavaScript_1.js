@@ -44,10 +44,3 @@ grd.addColorStop(1, "green");
 ctx.fillStyle = grd;
 ctx.fillRect(10, 10, 150, 80);
 
-function validateForm() {
-    let x = document.forms["myForm"]["text"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
