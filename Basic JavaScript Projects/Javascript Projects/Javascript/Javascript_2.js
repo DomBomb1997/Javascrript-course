@@ -4,19 +4,19 @@ function validateForm() {
     let Z = document.forms["myForm"]["email"].value;
     let A = document.forms["myForm"]["phone"].value;
     if (X == "") {
-      alert("Name must be filled out");
+      alert("First Name must be filled out");
       return false;
     }
     if (Y == "") {
-      alert("Name must be filled out");
+      alert("Last Name must be filled out");
       return false;
     }
     if (Z == "") {
-      alert("Name must be filled out");
+      alert("Email be filled out");
       return false;
     }
     if (A == "") {
-      alert("Name must be filled out");
+      alert("Phone must be filled out");
       return false;
     }
   }
