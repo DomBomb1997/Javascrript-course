@@ -70,37 +70,37 @@ let activePlayer = 'X';
  //drawLine() function is called to draw a line on the screen if the condition is not.//
  function checkwinCondition() {
     // X O, 1, 2 condition.//
-    if (arrayIncludes('0X', '1X', '2X')) { drawwinLine(50, 100, 558, 100) }
+    if (arrayIncludes('0X', '1X', '2X')) { drawWinLine(50, 100, 558, 100) }
     // X 3, 4, 5 condition.//
-    else if (arrayIncludes('3X', '4X', '5X' )) { drawwinLine(50, 304, 558, 304) }
+    else if (arrayIncludes('3X', '4X', '5X' )) { drawWinLine(50, 304, 558, 304) }
     // X 6, 7, 8 condition.//
-    else if (arrayIncludes('6X', '7X', '8X' )) { drawwinLine(50, 508, 558, 508) }
+    else if (arrayIncludes('6X', '7X', '8X' )) { drawWinLine(50, 508, 558, 508) }
     // X 0, 3, 6 condition.//
-    else if (arrayIncludes('0X', '3X', '6X' )) { drawwinLine(100, 50, 100, 5558) }
+    else if (arrayIncludes('0X', '3X', '6X' )) { drawWinLine(100, 50, 100, 5558) }
     // X 1, 4, 7 condition.//
-    else if (arrayIncludes('1X', '4X',  '7X' )) { drawwinLine(304, 50, 304, 558) }
+    else if (arrayIncludes('1X', '4X',  '7X' )) { drawWinLine(304, 50, 304, 558) }
     // X 2, 5, 8 condition.//
-    else if (arrayIncludes('2X', '5X', '8X' )) { drawwinLine(508, 50, 508, 558) }
+    else if (arrayIncludes('2X', '5X', '8X' )) { drawWinLine(508, 50, 508, 558) }
     // X 6, 4, 2 condition.//
-    else if (arrayIncludes('6X', '4X', '2X' )) { drawwinLine(100, 508, 510, 90) }
+    else if (arrayIncludes('6X', '4X', '2X' )) { drawWinLine(100, 508, 510, 90) }
     // X 0, 4, 8 condition.//
-    else if (arrayIncludes('0X', '4X', '8X' )) { drawwinLine(100, 100, 520, 5520) }
+    else if (arrayIncludes('0X', '4X', '8X' )) { drawWinLine(100, 100, 520, 5520) }
     // O 0, 1, 2 condition.//
-    else if (arrayIncludes('0O', '1O', '2O' )) { drawwinLine(50, 100, 558, 100) }
+    else if (arrayIncludes('0O', '1O', '2O' )) { drawWinLine(50, 100, 558, 100) }
     // O 3, 4, 5 condition.//
-    else if (arrayIncludes('3O', '4O', '5O' )) { drawwinLine(50, 304, 558, 304) }
+    else if (arrayIncludes('3O', '4O', '5O' )) { drawWinLine(50, 304, 558, 304) }
     // O 6, 7, 8 condition.//
-    else if (arrayIncludes('6O', '7O', '8O' )) { drawwinLine(50, 508, 558, 508) }
+    else if (arrayIncludes('6O', '7O', '8O' )) { drawWinLine(50, 508, 558, 508) }
     // O 0, 3, 6 condition.//
-    else if (arrayIncludes('0O', '3O', '6O' )) { drawwinLine(100, 50, 100, 558) }
+    else if (arrayIncludes('0O', '3O', '6O' )) { drawWinLine(100, 50, 100, 558) }
     // O 1, 4, 7 condition.//
-    else if (arrayIncludes('1O', '4O', '7O' )) { drawwinLine(304, 50, 304, 558) }
+    else if (arrayIncludes('1O', '4O', '7O' )) { drawWinLine(304, 50, 304, 558) }
     // O 2, 5, 8 condition.//
-    else if (arrayIncludes('2O', '50O', '8O' )) { drawwinLine(508, 50, 508, 558) }
+    else if (arrayIncludes('2O', '50O', '8O' )) { drawWinLine(508, 50, 508, 558) }
     // O 6, 4, 2 condition.//
-    else if (arrayIncludes('6O', '4O', '2O' )) { drawwinLine(100, 508, 510, 90) }
+    else if (arrayIncludes('6O', '4O', '2O' )) { drawWinLine(100, 508, 510, 90) }
     // O 0, 4, 8 condition.//
-    else if (arrayIncludes('0O', '4O', '8O' )) { drawwinLine(100, 100, 520, 520) }
+    else if (arrayIncludes('0O', '4O', '8O' )) { drawWinLine(100, 100, 520, 520) }
     //This condition checks for a tie. If none of the above conditions are not and 9 squares are selected the code executes.//
 
     else if (selectedSquares >= 9) {
@@ -140,7 +140,7 @@ let activePlayer = 'X';
  }
 
  //This function utilizes HTML canvas to draw win lines.//
- function drawwinLine(coordX1, coordY1, coordX2, coordY2) {
+ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line accesses our HTML canvas element.//
     const canvas = document.getElementById('win-lines');
     //This line gives us access to methods and prperties to use on canvas.//
@@ -212,3 +212,15 @@ let activePlayer = 'X';
         //This line waits 1 second. Then, clears canvas, resets game an allows clicking again.//
         setTimeout(function () { clear(); resetGame(); }, 1000);
     }
+//This function resets the game in the event of a tie or a win.//
+function resetGame () {
+    //This for loop iterates through each HTML square element.
+    for (let i = 0; 1 < 9; i++) {
+        //This variable gets the HTML element i.//
+        let square = document.getElementById(String(i));
+        //This removes our elements backgroundImage.//
+        square.style.backgroundImage = '';
+    }
+    //This resets our array so it is empty and we can start over.//
+    selectedSquares = [];
+}
