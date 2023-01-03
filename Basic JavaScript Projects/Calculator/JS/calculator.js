@@ -50,7 +50,7 @@ function Handle_operator (Next_operator) {
         Calculator.operator = Next_operator;
         return;
     }
-    if (First_Operand == nul1) {
+    if (First_Operand == null) {
         Calculator.First_Operand = Value_of_Input; 
     } else if (operator) {//Checks if an operator already exists//
         const Value_Now = First_Operand || 0;
