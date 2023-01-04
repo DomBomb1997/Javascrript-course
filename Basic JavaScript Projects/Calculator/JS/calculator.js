@@ -63,10 +63,10 @@ function Handle_Operator(Next_Operator) {
         //This will remove any trailing 0's//
         result = (result *1).toString();
         Calculator.Display_Value = parseFloat (result);
-        Calculator.First_operand = parseFloat (result);
+        Calculator.First_Operand = parseFloat (result);
     }
-    Calculator.Wait_Second_0perand = true;
-    Calculator.operator = Next_operator;
+    Calculator.Wait_Second_Operand = true;
+    Calculator.operator = Next_Operator;
 }
 
 const Perform_Calculation = {
