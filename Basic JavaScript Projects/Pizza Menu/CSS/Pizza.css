@@ -1,0 +1,70 @@
+#menuBG {
+font-family: Georgia, serif;
+width:400px;
+height:470px;
+margin:10px auto;
+}
+
+#frmMenu {
+font-family: "Gill Sans", sans-serif;
+width:400px;
+height:200px;
+}
+
+#totalPrice {
+font-family: serif;
+width:200px;
+height:190px;
+margin:0 auto;
+float : right;
+}
+
+.left {
+font-family: Impact, 'Arial Narrow Bold', sans-serif;
+width:200px;
+height:200px;
+float:left;
+}
+
+.right {
+font-family: 'Courier New', Courier, monospace;
+width:200px;
+height:200px;
+float:right;
+}
+
+#showText { 
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+width:200px;
+height:190px;
+margin:0px auto;
+float:left;
+}
+
+#cart {
+font-family: bold;
+top:0;margin:0px auto;
+width:400px;
+height:200px;
+}
+
+#btnOrder {
+font-family: comic;
+margin:10px 0px 0px 100px;
+width:100px;
+height:40px
+}
+
+#body {
+background-color: aquamarine;
+}
+
+#h1 {
+font-family: cursive;
+color: purple;
+}
+
+h3 {
+font-family: cursive;
+color: green;
+}

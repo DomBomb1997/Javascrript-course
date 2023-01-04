@@ -96,7 +96,7 @@ let activePlayer = 'X';
     // O 1, 4, 7 condition.//
     else if (arrayIncludes('1O', '4O', '7O' )) { drawWinLine(304, 50, 304, 558) }
     // O 2, 5, 8 condition.//
-    else if (arrayIncludes('2O', '50O', '8O' )) { drawWinLine(508, 50, 508, 558) }
+    else if (arrayIncludes('2O', '5O', '8O' )) { drawWinLine(508, 50, 508, 558) }
     // O 6, 4, 2 condition.//
     else if (arrayIncludes('6O', '4O', '2O' )) { drawWinLine(100, 508, 510, 90) }
     // O 0, 4, 8 condition.//
@@ -162,13 +162,13 @@ let activePlayer = 'X';
         //This variable creates a loop.//
         const animationLoop = requestAnimationFrame(animateLineDrawing);
         //This method clears content from the last loop iteration.//
-        c.clearRet(0, 0, 608, 608);
+        c.clearRect(0, 0, 608, 608);
         //This method moves us to a starting point in our line.//
         c.beginPath();
         //This method indicates the end point in our line.//
         c.moveTo(x1, y1);
         //This method indicates the end point in our line.//
-        c.lineTo(x, y,);
+        c.lineTo(x, y);
         //This method sets the width of our line.//
         c.lineWidth = 10;
         //This method sets the color of our line.//
@@ -188,8 +188,8 @@ let activePlayer = 'X';
         //This condition is similar to the one above.//
         //This is necessary for the 6, 4, 2 win condition.//
         if (x1 <= x2 && y1 >= y2); {
-            if (x < x2) { x =+ 10; }
-            if (y > y2) { y -+ 10; }
+            if (x < x2) { x += 10; }
+            if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop); }
             
         }
@@ -199,7 +199,7 @@ let activePlayer = 'X';
             //This line starts our animation loop//
             const animationLoop = requestAnimationFrame(clear);
             //This clears our canvas.//
-            c.clearRects(0, 0, 608, 608);
+            c.clearRect(0, 0, 608, 608);
             //This line stops our animation loop.//
             cancelAnimationFrame(animationLoop);
         }
@@ -215,7 +215,7 @@ let activePlayer = 'X';
 //This function resets the game in the event of a tie or a win.//
 function resetGame () {
     //This for loop iterates through each HTML square element.
-    for (let i = 0; 1 < 9; i++) {
+    for (let i = 0; i < 9; i++) {
         //This variable gets the HTML element i.//
         let square = document.getElementById(String(i));
         //This removes our elements backgroundImage.//
