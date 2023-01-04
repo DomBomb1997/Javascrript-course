@@ -7,7 +7,7 @@ margin:10px auto;
 
 #frmMenu {
 font-family: "Gill Sans", sans-serif;
-width:400px;
+width:600px;
 height:200px;
 }
 
@@ -15,7 +15,7 @@ height:200px;
 font-family: serif;
 width:200px;
 height:190px;
-margin:0 auto;
+margin:20px auto;
 float : right;
 }
 
@@ -24,6 +24,12 @@ font-family: Impact, 'Arial Narrow Bold', sans-serif;
 width:200px;
 height:200px;
 float:left;
+}
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
 }
 
 .right {
@@ -52,7 +58,9 @@ height:200px;
 font-family: comic;
 margin:10px 0px 0px 100px;
 width:100px;
-height:40px
+height:40px;
+display: block;
+margin: 25px auto;
 }
 
 #body {
