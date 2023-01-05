@@ -76,7 +76,7 @@ let activePlayer = 'X';
     // X 6, 7, 8 condition.//
     else if (arrayIncludes('6X', '7X', '8X' )) { drawWinLine(50, 508, 558, 508) }
     // X 0, 3, 6 condition.//
-    else if (arrayIncludes('0X', '3X', '6X' )) { drawWinLine(100, 50, 100, 5558) }
+    else if (arrayIncludes('0X', '3X', '6X' )) { drawWinLine(100, 50, 100, 558) }
     // X 1, 4, 7 condition.//
     else if (arrayIncludes('1X', '4X',  '7X' )) { drawWinLine(304, 50, 304, 558) }
     // X 2, 5, 8 condition.//
@@ -103,7 +103,7 @@ let activePlayer = 'X';
     else if (arrayIncludes('0O', '4O', '8O' )) { drawWinLine(100, 100, 520, 520) }
     //This condition checks for a tie. If none of the above conditions are not and 9 squares are selected the code executes.//
 
-    else if (selectedSquares >= 9) {
+    else if (selectedSquares.length >= 9) {
         //This function plays the tie game.//
         audio('./Media/tie.mp3');
         //This function sets a .3 second timer before the resetGame is called.//
