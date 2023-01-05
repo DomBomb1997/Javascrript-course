@@ -5,7 +5,7 @@ h1 {
 /*This container includes our table and our canvas.*/
 .center-container {
     /*This property sets the width of our container*/
-    width: 608;
+    width: 608px;
     /*This property center our container.*/
     margin: 0 auto;
     /*50px down from the top*/
