@@ -4,9 +4,9 @@ README.md
 JavaScript Projects
 These are some small projects I made using JavaScript.
 Projects 
-⋅⋅* [Pizza Menu](https://github.com/DomBomb1997/Javascrript-course/tree/main/Basic%20JavaScript%20Projects/Pizza%20Menu)
-⋅⋅* [Tic-Tac-Toe Game](https://github.com/DomBomb1997/Javascrript-course/tree/main/Basic%20JavaScript%20Projects/tictactoe)
-⋅⋅* [Calculator](https://github.com/DomBomb1997/Javascrript-course/tree/main/Basic%20JavaScript%20Projects/Calculator)
+*[Pizza Menu](https://github.com/DomBomb1997/Javascrript-course/tree/main/Basic%20JavaScript%20Projects/Pizza%20Menu)
+*[Tic-Tac-Toe Game](https://github.com/DomBomb1997/Javascrript-course/tree/main/Basic%20JavaScript%20Projects/tictactoe)
+*[Calculator](https://github.com/DomBomb1997/Javascrript-course/tree/main/Basic%20JavaScript%20Projects/Calculator)
     Pizza Menu
 This project is a menu used to order pizza with a various selection of toppings. It then takes the
 input information and caluclates a price for the order.
